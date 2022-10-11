@@ -1,0 +1,10 @@
+<ng-container *ngIf="dark | async">
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  <div class="clouds"></div>
+</ng-container>
+<ng-container *ngIf="!(dark | async)">
+  <div class="clouds-white"></div>
+</ng-container>
+
+<router-outlet></router-outlet>
